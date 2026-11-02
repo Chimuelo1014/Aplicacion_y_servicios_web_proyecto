@@ -1,0 +1,57 @@
+:root {
+    --brand: #1f3a5f;
+    --brand-dark: #152a45;
+    --accent: #f4a259;
+}
+
+.bg-brand { background-color: var(--brand) !important; }
+.text-accent { color: var(--accent) !important; }
+.btn-accent { background: var(--accent); border-color: var(--accent); color: #1b1b1b; }
+.btn-accent:hover { background: #e48d3f; border-color: #e48d3f; color: #1b1b1b; }
+
+/* ---------- Público ---------- */
+.guest-body { background: #f4f6fa; }
+
+.hero {
+    background: linear-gradient(120deg, rgba(21, 42, 69, .92), rgba(31, 58, 95, .75)),
+                url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600') center/cover;
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.feature-icon {
+    width: 3.5rem; height: 3.5rem;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: .75rem;
+    background: rgba(31, 58, 95, .1);
+    color: var(--brand);
+    font-size: 1.5rem;
+}
+
+.auth-card { max-width: 440px; }
+
+.card-vehiculo img { height: 180px; object-fit: cover; }
+
+/* ---------- Panel ---------- */
+.app-body { background: #f4f6fa; }
+
+@media (min-width: 992px) {
+    .sidebar { width: 260px; min-height: 100vh; position: sticky; top: 0; flex-shrink: 0; }
+}
+
+.sidebar .nav-link { border-radius: .5rem; opacity: .85; }
+.sidebar .nav-link:hover { background: rgba(255, 255, 255, .1); opacity: 1; }
+.sidebar .nav-link.active { background: var(--accent); color: #1b1b1b !important; opacity: 1; }
+
+.user-card { background: rgba(255, 255, 255, .08); }
+
+.content { min-width: 0; }
+
+.stat-card .icon {
+    width: 3rem; height: 3rem;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: .75rem;
+    font-size: 1.4rem;
+}
+
+.thumb { width: 64px; height: 44px; object-fit: cover; border-radius: .35rem; }
